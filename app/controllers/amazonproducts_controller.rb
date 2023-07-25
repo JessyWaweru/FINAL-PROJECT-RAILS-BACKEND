@@ -1,0 +1,2 @@
+class AmazonproductsController < ApplicationController
+end

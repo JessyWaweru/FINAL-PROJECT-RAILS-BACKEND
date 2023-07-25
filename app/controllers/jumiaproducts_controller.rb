@@ -1,0 +1,2 @@
+class JumiaproductsController < ApplicationController
+end

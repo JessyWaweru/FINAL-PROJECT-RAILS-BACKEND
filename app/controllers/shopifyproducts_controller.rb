@@ -1,0 +1,2 @@
+class ShopifyproductsController < ApplicationController
+end

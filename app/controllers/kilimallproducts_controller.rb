@@ -1,0 +1,2 @@
+class KilimallproductsController < ApplicationController
+end
