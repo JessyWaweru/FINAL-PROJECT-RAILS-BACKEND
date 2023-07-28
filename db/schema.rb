@@ -10,20 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_25_095532) do
-  create_table "amazonproduct_users", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "amazonproduct_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["amazonproduct_id"], name: "index_amazonproduct_users_on_amazonproduct_id"
-    t.index ["user_id"], name: "index_amazonproduct_users_on_user_id"
-  end
-
-  create_table "amazonproducts", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.string "image"
+ActiveRecord::Schema[7.0].define(version: 2023_07_27_094455) do
+  create_table "amazons", force: :cascade do |t|
     t.decimal "price"
     t.integer "days_to_ship"
     t.integer "review"
@@ -33,19 +21,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_25_095532) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "jumiaproduct_users", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "jumiaproduct_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["jumiaproduct_id"], name: "index_jumiaproduct_users_on_jumiaproduct_id"
-    t.index ["user_id"], name: "index_jumiaproduct_users_on_user_id"
-  end
-
-  create_table "jumiaproducts", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.string "image"
+  create_table "jumia", force: :cascade do |t|
     t.decimal "price"
     t.integer "days_to_ship"
     t.integer "review"
@@ -55,19 +31,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_25_095532) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "kilimallproduct_users", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "kilimallproduct_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["kilimallproduct_id"], name: "index_kilimallproduct_users_on_kilimallproduct_id"
-    t.index ["user_id"], name: "index_kilimallproduct_users_on_user_id"
-  end
-
-  create_table "kilimallproducts", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.string "image"
+  create_table "kilimalls", force: :cascade do |t|
     t.decimal "price"
     t.integer "days_to_ship"
     t.integer "review"
@@ -77,19 +41,23 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_25_095532) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "shopifyproduct_users", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "shopifyproduct_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["shopifyproduct_id"], name: "index_shopifyproduct_users_on_shopifyproduct_id"
-    t.index ["user_id"], name: "index_shopifyproduct_users_on_user_id"
-  end
-
-  create_table "shopifyproducts", force: :cascade do |t|
+  create_table "products", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.string "image"
+    t.integer "amazon_id", null: false
+    t.integer "shopify_id", null: false
+    t.integer "jumium_id", null: false
+    t.integer "kilimall_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["amazon_id"], name: "index_products_on_amazon_id"
+    t.index ["jumium_id"], name: "index_products_on_jumium_id"
+    t.index ["kilimall_id"], name: "index_products_on_kilimall_id"
+    t.index ["shopify_id"], name: "index_products_on_shopify_id"
+  end
+
+  create_table "shopifies", force: :cascade do |t|
     t.decimal "price"
     t.integer "days_to_ship"
     t.integer "review"
@@ -109,12 +77,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_25_095532) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "amazonproduct_users", "amazonproducts"
-  add_foreign_key "amazonproduct_users", "users"
-  add_foreign_key "jumiaproduct_users", "jumiaproducts"
-  add_foreign_key "jumiaproduct_users", "users"
-  add_foreign_key "kilimallproduct_users", "kilimallproducts"
-  add_foreign_key "kilimallproduct_users", "users"
-  add_foreign_key "shopifyproduct_users", "shopifyproducts"
-  add_foreign_key "shopifyproduct_users", "users"
+  create_table "users_products", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "product_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_users_products_on_product_id"
+    t.index ["user_id"], name: "index_users_products_on_user_id"
+  end
+
+  add_foreign_key "products", "amazons"
+  add_foreign_key "products", "jumia"
+  add_foreign_key "products", "kilimalls"
+  add_foreign_key "products", "shopifies"
+  add_foreign_key "users_products", "products"
+  add_foreign_key "users_products", "users"
 end

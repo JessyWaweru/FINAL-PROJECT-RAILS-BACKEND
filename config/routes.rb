@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :jumia
+  resources :shopifies
+  resources :kilimalls
+  resources :amazons
+  resources :products
   resources :kilimallproducts
   resources :jumiaproducts
   resources :shopifyproducts
