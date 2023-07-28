@@ -32,6 +32,11 @@ amazon3=Amazon.create(price:28.54, shipping_cost:2.54, days_to_ship:5, review:9,
 amazon4=Amazon.create(price:5.88, shipping_cost: 2.54, days_to_ship:5, review:10,product_location:"Westlands")
 amazon5=Amazon.create(price:48.99, shipping_cost:3.44, days_to_ship:5, review:10, product_location:"Westlands")
 amazon6=Amazon.create(price:8.99, shipping_cost:3.44, days_to_ship:5, review:10, product_location:"Westlands")
+amazon7=Amazon.create(price:18.99, shipping_cost:3.44, days_to_ship:5, review:10, product_location:"Westlands")
+amazon8=Amazon.create(price:12.99, shipping_cost:3.44, days_to_ship:5, review:10, product_location:"Westlands")
+
+
+
 
 
 shopify1=Shopify.create(price:31.49, shipping_cost:3.54, days_to_ship:2 , review:10, product_location: "Kilimani")
@@ -40,6 +45,7 @@ shopify3=Shopify.create(price:28.34, shipping_cost:8.53, days_to_ship:2, review:
 shopify4=Shopify.create(price:6.44, shipping_cost:8.53, days_to_ship:2, review:10, product_location: "Kilimani")
 shopify5=Shopify.create(price:45.39, shipping_cost:3.49, days_to_ship:2, review:10, product_location: "Kilimani")
 shopify6=Shopify.create(price:5.39, shipping_cost:3.49, days_to_ship:2, review:10, product_location: "Kilimani")
+shopify7=Shopify.create(price:15.39, shipping_cost:3.49, days_to_ship:2, review:10, product_location: "Kilimani")
 
 
 
@@ -49,6 +55,7 @@ kilimall3=Kilimall.create(price: 38.80, shipping_cost: 8.53, days_to_ship: 3, re
 kilimall4=Kilimall.create(price: 42.54, shipping_cost: 8.53, days_to_ship: 3, review:7, product_location: "Ngong Road")
 kilimall5=Kilimall.create(price: 42.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
 kilimall6=Kilimall.create(price: 5.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall7=Kilimall.create(price: 16.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
 
 
 jumium1=Jumium.create(price:21.49, shipping_cost:7.54, days_to_ship:4, review:10, product_location: "Adams Arcade")
@@ -57,6 +64,8 @@ jumium3=Jumium.create(price:17.54, shipping_cost:2.53, days_to_ship:4, review:10
 jumium4=Jumium.create(price:8.54, shipping_cost:3.54, days_to_ship:4, review:8, product_location: "Adams Arcade")
 jumium5=Jumium.create(price:38.54, shipping_cost:5.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
 jumium6=Jumium.create(price:8.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium7=Jumium.create(price:12.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
+
 
 
 product1=Product.create(name: "ON Shoes", description: "The cushioned, supportive running shoe that offers a unique comfort
@@ -66,6 +75,7 @@ product3=Product.create(name: "Samsung 40 Inches Smart TV", description: "Experi
 product4=Product.create(name: "Headphones", description: "Get gaming and unleash the inner champion with the ZEB-JET PRO premium gaming headphones.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSScA-AHpfv-pQespGcf7dNyG8Eo1eYdUZxXQ&usqp=CAU",amazon_id:amazon2.id,kilimall_id:kilimall2.id,jumium_id:jumium2.id,shopify_id:shopify2.id)
 product5=Product.create(name: "play station 5", description: "CPU: AMD Zen 2-based CPU with 8 cores at 3.5 GHz, GPU: 10.28 TFLOPs, 36 CUs at 2.23 GHz, RAM: 16GB GDDR6 / 256-bit, Memory bandwidth: 448GB", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkj0NLl-YotLeKOahh6kYANJfiNj82KPyp8g&usqp=CAU",amazon_id:amazon2.id,kilimall_id:kilimall2.id,jumium_id:jumium2.id,shopify_id:shopify2.id)
 product6=Product.create(name: "Nike ball", description: "Experience football because Nike got your hand", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsVj-LjaQZUnP064O-Q4mgxko5-HcHjHZp-g&usqp=CAU",amazon_id:amazon2.id,kilimall_id:kilimall2.id,jumium_id:jumium2.id,shopify_id:shopify2.id)
+product7=Product.create(name: "jersey", description: "quality jersys", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVaCBrXgXdAZyXlwDVc8wbu6gV9-9BE_7FuA&usqp=CAU",amazon_id:amazon2.id,kilimall_id:kilimall2.id,jumium_id:jumium2.id,shopify_id:shopify2.id)
 
 
 
