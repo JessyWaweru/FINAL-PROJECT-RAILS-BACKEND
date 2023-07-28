@@ -46,6 +46,7 @@ shopify4=Shopify.create(price:6.44, shipping_cost:8.53, days_to_ship:2, review:1
 shopify5=Shopify.create(price:45.39, shipping_cost:3.49, days_to_ship:2, review:10, product_location: "Kilimani")
 shopify6=Shopify.create(price:5.39, shipping_cost:3.49, days_to_ship:2, review:10, product_location: "Kilimani")
 shopify7=Shopify.create(price:15.39, shipping_cost:3.49, days_to_ship:2, review:10, product_location: "Kilimani")
+shopify8=Shopify.create(price:5.39, shipping_cost:3.49, days_to_ship:2, review:10, product_location: "Kilimani")
 
 
 
@@ -56,6 +57,8 @@ kilimall4=Kilimall.create(price: 42.54, shipping_cost: 8.53, days_to_ship: 3, re
 kilimall5=Kilimall.create(price: 42.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
 kilimall6=Kilimall.create(price: 5.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
 kilimall7=Kilimall.create(price: 16.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall8=Kilimall.create(price: 6.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
+
 
 
 jumium1=Jumium.create(price:21.49, shipping_cost:7.54, days_to_ship:4, review:10, product_location: "Adams Arcade")
@@ -65,6 +68,8 @@ jumium4=Jumium.create(price:8.54, shipping_cost:3.54, days_to_ship:4, review:8, 
 jumium5=Jumium.create(price:38.54, shipping_cost:5.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
 jumium6=Jumium.create(price:8.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
 jumium7=Jumium.create(price:12.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium8=Jumium.create(price:11.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
+
 
 
 
@@ -76,6 +81,7 @@ product4=Product.create(name: "Headphones", description: "Get gaming and unleash
 product5=Product.create(name: "play station 5", description: "CPU: AMD Zen 2-based CPU with 8 cores at 3.5 GHz, GPU: 10.28 TFLOPs, 36 CUs at 2.23 GHz, RAM: 16GB GDDR6 / 256-bit, Memory bandwidth: 448GB", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkj0NLl-YotLeKOahh6kYANJfiNj82KPyp8g&usqp=CAU",amazon_id:amazon2.id,kilimall_id:kilimall2.id,jumium_id:jumium2.id,shopify_id:shopify2.id)
 product6=Product.create(name: "Nike ball", description: "Experience football because Nike got your hand", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsVj-LjaQZUnP064O-Q4mgxko5-HcHjHZp-g&usqp=CAU",amazon_id:amazon2.id,kilimall_id:kilimall2.id,jumium_id:jumium2.id,shopify_id:shopify2.id)
 product7=Product.create(name: "jersey", description: "quality jersys", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVaCBrXgXdAZyXlwDVc8wbu6gV9-9BE_7FuA&usqp=CAU",amazon_id:amazon2.id,kilimall_id:kilimall2.id,jumium_id:jumium2.id,shopify_id:shopify2.id)
+product7=Product.create(name: "Nike football boots", description: "Nike Presents Its New Phantom Women's Boot | Hypebeast", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu8IiQdDWCYNYKHNfLCs9ZqiwVJfbB92nt_Q&usqp=CAU",amazon_id:amazon2.id,kilimall_id:kilimall2.id,jumium_id:jumium2.id,shopify_id:shopify2.id)
 
 
 
