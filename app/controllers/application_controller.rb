@@ -1,4 +1,4 @@
-class ApplicationController < ActionController::API
+class ApplicationController < ActionController::Base
     include ActionController::Cookies
     protect_from_forgery with: :exception
     def encode_token(uid, email)

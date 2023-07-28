@@ -1,14 +1,12 @@
-class CreateKilimallproducts < ActiveRecord::Migration[7.0]
+class CreateAmazons < ActiveRecord::Migration[7.0]
   def change
-    create_table :kilimallproducts do |t|
-      t.string :name
-      t.text :description
-      t.string :image 
+    create_table :amazons do |t|
       t.decimal :price
       t.integer :days_to_ship
       t.integer :review
       t.string :product_location
       t.decimal :shipping_cost
+      
       t.timestamps
     end
   end
