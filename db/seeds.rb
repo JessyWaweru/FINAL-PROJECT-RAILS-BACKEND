@@ -26,26 +26,8 @@ ActiveRecord::Base.connection.execute("DELETE FROM sqlite_sequence WHERE name='p
 user1=User.create(username:'Jessy',email:"Jessy@gmail.com",password:'password',gender:'male',age:20)
 
 
-amazon1=Amazon.create(price:20.53, shipping_cost:2.54, days_to_ship:5 ,review:9, product_location:"Westlands")
-amazon2=Amazon.create(price:36.38, shipping_cost:2.54, days_to_ship:5 , review:8,product_location:"Westlands")
-amazon3=Amazon.create(price:28.54, shipping_cost:2.54, days_to_ship:5, review:9, product_location:"Westlands")
-amazon4=Amazon.create(price:5.88, shipping_cost: 2.54, days_to_ship:5, review:3,product_location:"Westlands")
-amazon5=Amazon.create(price:48.99, shipping_cost:3.44, days_to_ship:5, review:1, product_location:"Westlands")
-amazon6=Amazon.create(price:8.99, shipping_cost:3.44, days_to_ship:5, review:9, product_location:"Westlands")
-amazon7=Amazon.create(price:18.99, shipping_cost:3.44, days_to_ship:5, review:8, product_location:"Westlands")
-amazon8=Amazon.create(price:20.99, shipping_cost:3.44, days_to_ship:5, review:7, product_location:"Westlands")
-amazon9=Amazon.create(price:120.00, shipping_cost:3.44, days_to_ship:5, review:6, product_location:"Westlands")
-amazon10=Amazon.create(price:125.99, shipping_cost:3.44, days_to_ship:5, review:5, product_location:"Westlands")
-amazon11=Amazon.create(price:132.99, shipping_cost:3.44, days_to_ship:5, review:4, product_location:"Westlands")
-amazon12=Amazon.create(price:112.99, shipping_cost:3.44, days_to_ship:5, review:3, product_location:"Westlands")
-amazon13=Amazon.create(price:2.99, shipping_cost:3.44, days_to_ship:5, review:2, product_location:"Westlands")
-amazon14=Amazon.create(price:22.99, shipping_cost:3.44, days_to_ship:5, review:1, product_location:"Westlands")
-amazon15=Amazon.create(price:42.99, shipping_cost:3.44, days_to_ship:5, review:10, product_location:"Westlands")
-amazon16=Amazon.create(price:52.99, shipping_cost:3.44, days_to_ship:5, review:9, product_location:"Westlands")
-amazon17=Amazon.create(price:82.99, shipping_cost:3.44, days_to_ship:5, review:8, product_location:"Westlands")
-amazon18=Amazon.create(price:92.99, shipping_cost:3.44, days_to_ship:5, review:7, product_location:"Westlands")
-amazon19=Amazon.create(price:52.99, shipping_cost:3.44, days_to_ship:5, review:6, product_location:"Westlands")
-amazon20=Amazon.create(price:62.99, shipping_cost:3.44, days_to_ship:5, review:5, product_location:"Westlands")
+
+
 amazon21=Amazon.create(price:70.99, shipping_cost:4.44, days_to_ship:5, review:7, product_location:"Westlands")
 amazon22=Amazon.create(price:70.99, shipping_cost:4.44, days_to_ship:5, review:7, product_location:"Westlands")
 amazon23=Amazon.create(price:70.99, shipping_cost:4.44, days_to_ship:5, review:7, product_location:"Westlands")
@@ -73,26 +55,7 @@ amazon40=Amazon.create(price:70.99, shipping_cost:4.44, days_to_ship:5, review:7
 
 
 
-shopify1=Shopify.create(price:31.49, shipping_cost:3.54, days_to_ship:2 , review:10, product_location: "Kilimani")
-shopify2=Shopify.create(price:41.80, shipping_cost:8.53, days_to_ship:2, review:10, product_location: "Kilimani")
-shopify3=Shopify.create(price:28.34, shipping_cost:8.53, days_to_ship:2, review:10,product_location: "Kilimani")
-shopify4=Shopify.create(price:6.44, shipping_cost:8.53, days_to_ship:2, review:10, product_location: "Kilimani")
-shopify5=Shopify.create(price:45.39, shipping_cost:3.49, days_to_ship:2, review:6, product_location: "Kilimani")
-shopify6=Shopify.create(price:5.39, shipping_cost:3.49, days_to_ship:2, review:10, product_location: "Kilimani")
-shopify7=Shopify.create(price:15.39, shipping_cost:3.49, days_to_ship:2, review:7, product_location: "Kilimani")
-shopify8=Shopify.create(price:52.39, shipping_cost:3.49, days_to_ship:2, review:5, product_location: "Kilimani")
-shopify9=Shopify.create(price:55.39, shipping_cost:3.49, days_to_ship:2, review:2, product_location: "Kilimani")
-shopify10=Shopify.create(price:15.39, shipping_cost:3.49, days_to_ship:2, review:10, product_location: "Kilimani")
-shopify11=Shopify.create(price:5.39, shipping_cost:3.49, days_to_ship:2, review:10, product_location: "Kilimani")
-shopify12=Shopify.create(price:95.39, shipping_cost:3.49, days_to_ship:2, review:10, product_location: "Kilimani")
-shopify13=Shopify.create(price:85.39, shipping_cost:3.49, days_to_ship:2, review:2, product_location: "Kilimani")
-shopify14=Shopify.create(price:75.39, shipping_cost:3.49, days_to_ship:2, review:3, product_location: "Kilimani")
-shopify15=Shopify.create(price:65.39, shipping_cost:3.49, days_to_ship:2, review:4, product_location: "Kilimani")
-shopify16=Shopify.create(price:55.39, shipping_cost:3.49, days_to_ship:2, review:5, product_location: "Kilimani")
-shopify17=Shopify.create(price:45.39, shipping_cost:3.49, days_to_ship:2, review:6, product_location: "Kilimani")
-shopify18=Shopify.create(price:35.39, shipping_cost:3.49, days_to_ship:2, review:7, product_location: "Kilimani")
-shopify19=Shopify.create(price:25.39, shipping_cost:3.49, days_to_ship:2, review:8, product_location: "Kilimani")
-shopify20=Shopify.create(price:15.39, shipping_cost:3.49, days_to_ship:2, review:9, product_location: "Kilimani")
+
 shopify21=Shopify.create(price:15.39, shipping_cost:3.49, days_to_ship:2, review:9, product_location: "Kilimani")
 shopify22=Shopify.create(price:15.39, shipping_cost:3.49, days_to_ship:2, review:9, product_location: "Kilimani")
 shopify23=Shopify.create(price:15.39, shipping_cost:3.49, days_to_ship:2, review:9, product_location: "Kilimani")
@@ -117,26 +80,7 @@ shopify40=Shopify.create(price:15.39, shipping_cost:3.49, days_to_ship:2, review
 
 
 
-kilimall1=Kilimall.create(price:41.49, shipping_cost:8.54 , days_to_ship:3, review:10, product_location: "Ngong Road")
-kilimall2=Kilimall.create(price: 40.80, shipping_cost: 8.53, days_to_ship: 3, review:10, product_location: "Ngong Road")
-kilimall3=Kilimall.create(price: 38.80, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall4=Kilimall.create(price: 42.54, shipping_cost: 8.53, days_to_ship: 3, review:7, product_location: "Ngong Road")
-kilimall5=Kilimall.create(price: 42.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall6=Kilimall.create(price: 5.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall7=Kilimall.create(price: 16.54, shipping_cost: 8.53, days_to_ship: 3, review:4, product_location: "Ngong Road")
-kilimall8=Kilimall.create(price: 6.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall9=Kilimall.create(price:41.49, shipping_cost:8.54 , days_to_ship:3, review:10, product_location: "Ngong Road")
-kilimall10=Kilimall.create(price: 40.80, shipping_cost: 8.53, days_to_ship: 3, review:10, product_location: "Ngong Road")
-kilimall11=Kilimall.create(price: 38.80, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall12=Kilimall.create(price: 42.54, shipping_cost: 8.53, days_to_ship: 3, review:7, product_location: "Ngong Road")
-kilimall13=Kilimall.create(price: 42.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall14=Kilimall.create(price: 5.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall15=Kilimall.create(price: 16.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall16=Kilimall.create(price: 6.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall17=Kilimall.create(price: 42.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall18=Kilimall.create(price: 5.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall19=Kilimall.create(price: 16.54, shipping_cost: 8.53, days_to_ship: 3, review:8, product_location: "Ngong Road")
-kilimall20=Kilimall.create(price: 6.54, shipping_cost: 8.53, days_to_ship: 3, review:6, product_location: "Ngong Road")
+
 kilimall21=Kilimall.create(price: 6.54, shipping_cost: 8.53, days_to_ship: 3, review:6, product_location: "Ngong Road")
 kilimall22=Kilimall.create(price: 6.54, shipping_cost: 8.53, days_to_ship: 3, review:6, product_location: "Ngong Road")
 kilimall23=Kilimall.create(price: 6.54, shipping_cost: 8.53, days_to_ship: 3, review:6, product_location: "Ngong Road")
@@ -164,26 +108,7 @@ kilimall40=Kilimall.create(price: 6.54, shipping_cost: 8.53, days_to_ship: 3, re
 
 
 
-jumium1=Jumium.create(price:21.49, shipping_cost:7.54, days_to_ship:4, review:10, product_location: "Adams Arcade")
-jumium2=Jumium.create(price:28.80, shipping_cost:2.53, days_to_ship:4, review:10, product_location: "Adams Arcade")
-jumium3=Jumium.create(price:17.54, shipping_cost:2.53, days_to_ship:4, review:10, product_location: "Adams Arcade")
-jumium4=Jumium.create(price:8.54, shipping_cost:3.54, days_to_ship:4, review:8, product_location: "Adams Arcade")
-jumium5=Jumium.create(price:38.54, shipping_cost:5.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
-jumium6=Jumium.create(price:8.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
-jumium7=Jumium.create(price:12.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
-jumium8=Jumium.create(price:11.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
-jumium9=Jumium.create(price:21.49, shipping_cost:7.54, days_to_ship:4, review:10, product_location: "Adams Arcade")
-jumium10=Jumium.create(price:28.80, shipping_cost:2.53, days_to_ship:4, review:10, product_location: "Adams Arcade")
-jumium11=Jumium.create(price:17.54, shipping_cost:2.53, days_to_ship:4, review:10, product_location: "Adams Arcade")
-jumium12=Jumium.create(price:8.54, shipping_cost:3.54, days_to_ship:4, review:8, product_location: "Adams Arcade")
-jumium13=Jumium.create(price:38.54, shipping_cost:5.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
-jumium14=Jumium.create(price:8.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
-jumium15=Jumium.create(price:12.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
-jumium16=Jumium.create(price:11.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
-jumium17=Jumium.create(price:38.54, shipping_cost:5.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
-jumium18=Jumium.create(price:8.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
-jumium19=Jumium.create(price:12.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
-jumium20=Jumium.create(price:11.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
+
 jumium21=Jumium.create(price:11.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
 jumium22=Jumium.create(price:11.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
 jumium23=Jumium.create(price:11.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
@@ -205,10 +130,99 @@ jumium38=Jumium.create(price:11.54, shipping_cost:3.54, days_to_ship:4, review:7
 jumium39=Jumium.create(price:11.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
 jumium40=Jumium.create(price:11.54, shipping_cost:3.54, days_to_ship:4, review:7, product_location: "Adams Arcade")
 
+amazon1=Amazon.create(price:5000, shipping_cost:121, days_to_ship:5 ,review:9, product_location:"Westlands")
+amazon2=Amazon.create(price:46000, shipping_cost:121, days_to_ship:5 , review:8,product_location:"Westlands")
+amazon3=Amazon.create(price:65500, shipping_cost:121, days_to_ship:5, review:9, product_location:"Westlands")
+amazon4=Amazon.create(price:10000, shipping_cost: 254, days_to_ship:5, review:3,product_location:"Westlands")
+amazon5=Amazon.create(price:100000, shipping_cost:1044, days_to_ship:5, review:1, product_location:"Westlands")
+amazon6=Amazon.create(price:3000, shipping_cost:344, days_to_ship:5, review:9, product_location:"Westlands")
+amazon7=Amazon.create(price:1898, shipping_cost:344, days_to_ship:5, review:8, product_location:"Westlands")
+amazon8=Amazon.create(price:2098, shipping_cost:344, days_to_ship:5, review:7, product_location:"Westlands")
+amazon9=Amazon.create(price:12000, shipping_cost:344, days_to_ship:5, review:6, product_location:"Westlands")
+amazon10=Amazon.create(price:12598, shipping_cost:344, days_to_ship:5, review:5, product_location:"Westlands")
+amazon11=Amazon.create(price:13297, shipping_cost:344, days_to_ship:5, review:4, product_location:"Westlands")
+amazon12=Amazon.create(price:11290, shipping_cost:344, days_to_ship:5, review:3, product_location:"Westlands")
+amazon13=Amazon.create(price:290, shipping_cost:344, days_to_ship:5, review:2, product_location:"Westlands")
+amazon14=Amazon.create(price:22, shipping_cost:344, days_to_ship:5, review:1, product_location:"Westlands")
+amazon15=Amazon.create(price:42, shipping_cost:344, days_to_ship:5, review:10, product_location:"Westlands")
+amazon16=Amazon.create(price:52, shipping_cost:344, days_to_ship:5, review:9, product_location:"Westlands")
+amazon17=Amazon.create(price:82, shipping_cost:344, days_to_ship:5, review:8, product_location:"Westlands")
+amazon18=Amazon.create(price:92, shipping_cost:344, days_to_ship:5, review:7, product_location:"Westlands")
+amazon19=Amazon.create(price:52, shipping_cost:344, days_to_ship:5, review:6, product_location:"Westlands")
+amazon20=Amazon.create(price:62, shipping_cost:344, days_to_ship:5, review:5, product_location:"Westlands")
 
 
 
 
+
+
+shopify1=Shopify.create(price:4000, shipping_cost:354, days_to_ship:2 , review:10, product_location: "Kilimani")
+shopify2=Shopify.create(price:37000, shipping_cost:853, days_to_ship:2, review:10, product_location: "Kilimani")
+shopify3=Shopify.create(price:70000, shipping_cost:853, days_to_ship:2, review:10,product_location: "Kilimani")
+shopify4=Shopify.create(price:6644, shipping_cost:850, days_to_ship:2, review:10, product_location: "Kilimani")
+shopify5=Shopify.create(price:85500, shipping_cost:340, days_to_ship:2, review:6, product_location: "Kilimani")
+shopify6=Shopify.create(price:2500, shipping_cost:340, days_to_ship:2, review:10, product_location: "Kilimani")
+shopify7=Shopify.create(price:1530, shipping_cost:340, days_to_ship:2, review:7, product_location: "Kilimani")
+shopify8=Shopify.create(price:5230, shipping_cost:340, days_to_ship:2, review:5, product_location: "Kilimani")
+shopify9=Shopify.create(price:5530, shipping_cost:340, days_to_ship:2, review:2, product_location: "Kilimani")
+shopify10=Shopify.create(price:1530, shipping_cost:340, days_to_ship:2, review:10, product_location: "Kilimani")
+shopify11=Shopify.create(price:530, shipping_cost:340, days_to_ship:2, review:10, product_location: "Kilimani")
+shopify12=Shopify.create(price:9530, shipping_cost:340, days_to_ship:2, review:10, product_location: "Kilimani")
+shopify13=Shopify.create(price:8530, shipping_cost:340, days_to_ship:2, review:2, product_location: "Kilimani")
+shopify14=Shopify.create(price:7530, shipping_cost:340, days_to_ship:2, review:3, product_location: "Kilimani")
+shopify15=Shopify.create(price:6530, shipping_cost:340, days_to_ship:2, review:4, product_location: "Kilimani")
+shopify16=Shopify.create(price:5530, shipping_cost:340, days_to_ship:2, review:5, product_location: "Kilimani")
+shopify17=Shopify.create(price:4530, shipping_cost:340, days_to_ship:2, review:6, product_location: "Kilimani")
+shopify18=Shopify.create(price:3530, shipping_cost:340, days_to_ship:2, review:7, product_location: "Kilimani")
+shopify19=Shopify.create(price:2530, shipping_cost:340, days_to_ship:2, review:8, product_location: "Kilimani")
+shopify20=Shopify.create(price:1530, shipping_cost:340, days_to_ship:2, review:9, product_location: "Kilimani")
+
+
+
+
+kilimall1=Kilimall.create(price:4140, shipping_cost:854 , days_to_ship:3, review:10, product_location: "Ngong Road")
+kilimall2=Kilimall.create(price: 30000, shipping_cost: 853, days_to_ship: 3, review:10, product_location: "Ngong Road")
+kilimall3=Kilimall.create(price: 65000, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall4=Kilimall.create(price: 8254, shipping_cost: 853, days_to_ship: 3, review:7, product_location: "Ngong Road")
+kilimall5=Kilimall.create(price: 85000, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall6=Kilimall.create(price: 554, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall7=Kilimall.create(price: 1654, shipping_cost: 853, days_to_ship: 3, review:4, product_location: "Ngong Road")
+kilimall8=Kilimall.create(price: 654, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall9=Kilimall.create(price:4140, shipping_cost:854 , days_to_ship:3, review:10, product_location: "Ngong Road")
+kilimall10=Kilimall.create(price: 4080, shipping_cost: 853, days_to_ship: 3, review:10, product_location: "Ngong Road")
+kilimall11=Kilimall.create(price: 3880, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall12=Kilimall.create(price: 4254, shipping_cost: 853, days_to_ship: 3, review:7, product_location: "Ngong Road")
+kilimall13=Kilimall.create(price: 4254, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall14=Kilimall.create(price: 554, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall15=Kilimall.create(price: 1654, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall16=Kilimall.create(price: 654, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall17=Kilimall.create(price: 4254, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall18=Kilimall.create(price: 554, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall19=Kilimall.create(price: 1654, shipping_cost: 853, days_to_ship: 3, review:8, product_location: "Ngong Road")
+kilimall20=Kilimall.create(price: 654, shipping_cost: 853, days_to_ship: 3, review:6, product_location: "Ngong Road")
+
+
+
+jumium1=Jumium.create(price:2140, shipping_cost:754, days_to_ship:4, review:10, product_location: "Adams Arcade")
+jumium2=Jumium.create(price:35000, shipping_cost:253, days_to_ship:4, review:10, product_location: "Adams Arcade")
+jumium3=Jumium.create(price:60000, shipping_cost:253, days_to_ship:4, review:10, product_location: "Adams Arcade")
+jumium4=Jumium.create(price:8000, shipping_cost:354, days_to_ship:4, review:8, product_location: "Adams Arcade")
+jumium5=Jumium.create(price:80000, shipping_cost:554, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium6=Jumium.create(price:2000, shipping_cost:354, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium7=Jumium.create(price:1254, shipping_cost:354, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium8=Jumium.create(price:1154, shipping_cost:354, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium9=Jumium.create(price:2140, shipping_cost:754, days_to_ship:4, review:10, product_location: "Adams Arcade")
+jumium10=Jumium.create(price:2880, shipping_cost:253, days_to_ship:4, review:10, product_location: "Adams Arcade")
+jumium11=Jumium.create(price:1754, shipping_cost:253, days_to_ship:4, review:10, product_location: "Adams Arcade")
+jumium12=Jumium.create(price:854, shipping_cost:354, days_to_ship:4, review:8, product_location: "Adams Arcade")
+jumium13=Jumium.create(price:3854, shipping_cost:554, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium14=Jumium.create(price:854, shipping_cost:354, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium15=Jumium.create(price:1254, shipping_cost:354, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium16=Jumium.create(price:1154, shipping_cost:354, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium17=Jumium.create(price:3854, shipping_cost:554, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium18=Jumium.create(price:854, shipping_cost:354, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium19=Jumium.create(price:1254, shipping_cost:354, days_to_ship:4, review:7, product_location: "Adams Arcade")
+jumium20=Jumium.create(price:1154, shipping_cost:354, days_to_ship:4, review:7, product_location: "Adams Arcade")
 
 product1=Product.create(name: "ON Shoes", description: "Enhance your workout with these On sneakers. They are lightweight and comfortable, with high-quality design and engineering.", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60", amazon_id:amazon1.id,kilimall_id:kilimall1.id,jumium_id:jumium1.id,shopify_id:shopify1.id)
 product2=Product.create(name: "Oppo A57", description: "The Oppo A57 4G has a fast 2.3 GHz Octa-core processor and 4GB of RAM. It has 64GB of storage that can be expanded with a microSDXC card. The phone runs on Android 12 and has a long-lasting 5000mAh battery that cannot be removed.", image: "https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHBob25lfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",amazon_id:amazon2.id,kilimall_id:kilimall2.id,jumium_id:jumium2.id,shopify_id:shopify2.id)
@@ -254,6 +268,7 @@ product40=Product.create(name: "Glass Vase", description: "This glass vase is ex
 
 
 
+
 usersproduct1=UsersProduct.create(user:user1,product:product1)
 
 puts 'SEEDING ENDED'
@@ -264,7 +279,7 @@ end
 
 if product1.errors.any?
     puts'errors'
-    product1.create.errors.full_messages.each do |mess|
+    product1.errors.full_messages.each do |mess|
         puts "#{mess}"
     end
 end
