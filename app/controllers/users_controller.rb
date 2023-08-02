@@ -84,7 +84,8 @@ class UsersController < ApplicationController
         render json: {message: 'Logout successful'}
     end
     # GET ALL EVENTS RELATED TO A USER ID
-    def get_all_user_events
+    def get_all_user_products
+        
     end
 
      private

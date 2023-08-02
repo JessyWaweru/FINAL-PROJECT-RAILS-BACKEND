@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :amazonproducts
   resources :users
   post "/login", to: "users#login"
-  get "/users/:id/events", to: "users#get_all_user_events"
+  get "/users/:id/products", to: "users#get_all_user_products"
   delete '/logout', to: 'users#logout'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
