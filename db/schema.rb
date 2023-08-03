@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_27_094455) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_03_180523) do
   create_table "amazons", force: :cascade do |t|
     t.decimal "price"
     t.integer "days_to_ship"
@@ -51,6 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_27_094455) do
     t.integer "kilimall_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "about"
     t.index ["amazon_id"], name: "index_products_on_amazon_id"
     t.index ["jumium_id"], name: "index_products_on_jumium_id"
     t.index ["kilimall_id"], name: "index_products_on_kilimall_id"
@@ -75,6 +76,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_27_094455) do
     t.string "gender"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "admin"
   end
 
   create_table "users_products", force: :cascade do |t|

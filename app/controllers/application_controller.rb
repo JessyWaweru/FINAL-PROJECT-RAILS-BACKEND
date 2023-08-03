@@ -1,17 +1,21 @@
 class ApplicationController < ActionController::Base
     include ActionController::Cookies
     protect_from_forgery with: :exception
-    def encode_token(uid, email)
+    def encode_token(uid, email,admin)
         payload = {
             data:{
                 uid: uid,
-                email: email
+                email: email,
+                admin:admin
+
             },
             exp: Time.now.to_i + (6*3600)
         }
-       # JWT.encode(payload, "secret") => commented out
+        JWT.encode(payload, "your_secret_key","HS256") 
     end
-
+def admin?
+    decoded_token['data'] ['admin']==true
+end
     def decode_token
         # get the token from the headers
         auth_header = request.headers['Authorization']
@@ -34,7 +38,15 @@ class ApplicationController < ActionController::Base
 
         if decoded_token
             # take out the user id
-            @uid = decoded_token[0]['data']['uid'].to_i
+            user_id= decoded_token[0]['data']['uid']
+            @user=User.find_by(id:user_id)
+
+            if @user && admin?
+                return @user
+            else render json:{error:"Unauthorized access"},status: :unauthorized
+            end
+
+        else render json:{error:'Invalid token'}, status: :unauthorized
             # [{payload},{header},{verify_signature}]
             # {
             #     "id": 10,
