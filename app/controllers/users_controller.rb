@@ -94,3 +94,4 @@ class UsersController < ApplicationController
         params.permit(:username, :email, :password, :gender, :age)
     end
 end
+

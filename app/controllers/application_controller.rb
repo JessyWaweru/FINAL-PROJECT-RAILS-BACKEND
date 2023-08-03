@@ -9,15 +9,15 @@ class ApplicationController < ActionController::Base
             },
             exp: Time.now.to_i + (6*3600)
         }
-       # JWT.encode(payload, "secret") => commented out
+       
     end
 
     def decode_token
-        # get the token from the headers
+        
         auth_header = request.headers['Authorization']
-        # check whether the token is present
+        
         if auth_header
-            # 'Bearer hafsdhfgjsdhvbd' split(' ')[1]
+            
             token = auth_header.split(' ')[1]
             # wrap the decoding process within an exception
             begin
