@@ -1,23 +1,28 @@
 class ApplicationController < ActionController::Base
     include ActionController::Cookies
+    require 'jwt'
     protect_from_forgery with: :exception
-    def encode_token(uid, email)
+    def encode_token(uid, email,admin)
         payload = {
             data:{
                 uid: uid,
-                email: email
+                email: email,
+                admin:admin
+
             },
             exp: Time.now.to_i + (6*3600)
         }
-       
+        JWT.encode(payload, "your_secret_key","HS256") 
     end
-
+def admin?
+    decoded_token['data'] ['admin']==true
+end
     def decode_token
-        
+        # get the token from the headers
         auth_header = request.headers['Authorization']
-        
+        # check whether the token is present
         if auth_header
-            
+            # 'Bearer hafsdhfgjsdhvbd' split(' ')[1]
             token = auth_header.split(' ')[1]
             # wrap the decoding process within an exception
             begin
@@ -34,24 +39,22 @@ class ApplicationController < ActionController::Base
 
         if decoded_token
             # take out the user id
-            @uid = decoded_token[0]['data']['uid'].to_i
-            # [{payload},{header},{verify_signature}]
-            # {
-            #     "id": 10,
-            #     "firstName": "John"
-            # }
-        
-            # find the user that matches the ID
-            # user = User.find_by(id: user_id)
-        # else 
-        #     render json: {error: 'User not found'}, status: :not_found
+            user_id= decoded_token[0]['data']['uid']
+            @user=User.find_by(id:user_id)
+
+            if @user && admin?
+                return @user
+            else render json:{error:"Unauthorized access"},status: :unauthorized
+            end
+
+        else render json:{error:'Invalid token'}, status: :unauthorized
+         
         end
     end
     def user
         User.find(@uid)
     end
     
-     # store user id in session
      def save_user(id)
         session[:uid] = id
         session[:expiry] =Time.now.to_i + (6*3600)

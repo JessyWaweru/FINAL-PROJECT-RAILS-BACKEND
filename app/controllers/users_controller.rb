@@ -70,7 +70,7 @@ class UsersController < ApplicationController
         # validate whether the password is true
         if user && user.authenticate(user_params[:password])
             save_user(user.id)
-            token = encode_token(user.id, user.email)
+            token = encode_token(user.id, user.email,user.admin)
             render json: { user: user, token: token}, status: :ok
 
         # return an invalid email or password scheme
@@ -91,7 +91,7 @@ class UsersController < ApplicationController
      private
 
     def user_params
-        params.permit(:username, :email, :password, :gender, :age)
+        params.permit(:username, :email, :password, :gender, :age, :admin)
     end
 end
 

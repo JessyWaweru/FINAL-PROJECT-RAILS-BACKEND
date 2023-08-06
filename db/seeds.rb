@@ -23,7 +23,7 @@ ActiveRecord::Base.connection.execute("DELETE FROM sqlite_sequence WHERE name='p
 #product1=ON shoes
 #product2=Oppo A5s
 
-user1=User.create(username:'Jessy',email:"Jessy@gmail.com",password:'password',gender:'male',age:20)
+user1=User.create(username:'Jessy',email:"Jessy@gmail.com",password:'password',gender:'male',age:20,admin:true)
 
 
 
