@@ -1,0 +1,2 @@
+module ShopifyLocationsHelper
+end
